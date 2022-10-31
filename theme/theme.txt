@@ -1,0 +1,41 @@
+#theme file
+
+# Global Properties
+title-text: ""
+desktop-color: "#b7cdc8"
+
+# Tip
+menu-tip-left: "30%+20"
+menu-tip-top: "80%+10"
+menu-tip-color: "#000000"
+
+# Logo Image
++ image {
+  top = 10%
+  left = 50%-281
+  width = 563
+  height = 80
+  file = "images/logo.png"
+}
+
+# Accent Image
++ image {
+  top = 38%
+  left = 8%
+  width = 129
+  height = 280
+  file = "images/vector.png"
+}
+
+# Styling for the boot menu
++ boot_menu {
+  left = 30%
+  top = 30%
+  width = 60%
+  height = 50%
+  selected_item_color = "#4E131E"
+  menu_pixmap_style = "images/boot_menu_*.png"
+  selected_item_pixmap_style = "images/selected_item_*.png"
+  scrollbar_thumb = "images/thumb_*.png"
+}
+

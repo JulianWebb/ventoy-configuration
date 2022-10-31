@@ -1,0 +1,96 @@
+{
+    "control":[
+        { "VTOY_MAX_SEARCH_LEVEL": "4" },
+        { "VTOY_WIN11_BYPASS_CHECK": "1" },
+        { "VTOY_DEFAULT_SEARCH_ROOT": "/Images"}
+    ],
+    "auto_memdisk": [
+        "/Images/Recovery/Hirens_BootCD_PE_x64_v1.0.2.iso"
+    ],
+    "theme":{
+        "file": "/ventoy/theme/theme.txt"
+    }, 
+    "menu_class": [
+        {
+            "parent" : "/Images/Linux",
+            "class": "linux"
+        },
+        {
+            "parent" : "/Images/Windows",
+            "class": "windows"
+        },
+        {
+            "parent": "/Images/Recovery",
+            "class": "recovery"
+        }
+    ],
+    "menu_alias" : [
+        {
+            "image": "/Images/Windows/en_windows_7_professional_with_sp1_x64_dvd_u_676939.iso",
+            "alias": "Windows 7 Professional Install"
+        },
+        {
+            "image": "/Images/Windows/en_windows_10_PRO_EDU_ENT_1909_x64_dvd_ada535d0.iso",
+            "alias": "Windows 10 Pro/Education/Enterprise Install"
+        },
+        {
+            "image": "/Images/Recovery/Hirens_BootCD_PE_x64_v1.0.2.iso",
+            "alias": "Hiren's BootCD PE"
+        },
+        {
+            "image" : "/Images/Recovery/rescatux-0.74.iso",
+            "alias" : "Rescatux Recovery"
+        },
+        {
+            "image": "/Images/Linux/debian-live-11.5.0-amd64-kde+nonfree.iso",
+            "alias": "Debian 11.5 Live"
+        },
+        {
+            "image": "/Images/Linux/debian-11.5.0-amd64-DVD-1.iso",
+            "alias": "Debian 11.5 Install"
+        },
+        {
+            "image": "/Images/Linux/Fedora-KDE-Live-x86_64-36-1.5.iso",
+            "alias": "Fedora 36 Install"
+        }
+    ],
+    "menu_tip" : {
+        "tips": [
+            {
+                "image": "/Images/Windows/en_windows_7_professional_with_sp1_x64_dvd_u_676939.iso",
+                "tip": "Install Windows 7 or use official Recovery Tools"
+            },
+            {
+                "image": "/Images/Windows/en_windows_10_PRO_EDU_ENT_1909_x64_dvd_ada535d0.iso",
+                "tip": "Install Windows 10 or use official Recovery Tools"
+            },
+            {
+                "image": "/Images/Recovery/Hirens_BootCD_PE_x64_v1.0.2.iso",
+                "tip": "Windows 10 based Recovery Live USB for Windows"
+            },
+            {
+                "image" : "/Images/Recovery/rescatux-0.74.iso",
+                "tip" : "Debian based Recovery Live USB for Windows and Linux"
+            },
+            {
+                "image": "/Images/Linux/debian-live-11.5.0-amd64-kde+nonfree.iso",
+                "tip": "Live Environment with Persistence"
+            },
+            {
+                "image": "/Images/Linux/debian-11.5.0-amd64-DVD-1.iso",
+                "tip": "Intall Debian 11.5"
+            },
+            {
+                "image": "/Images/Linux/Fedora-KDE-Live-x86_64-36-1.5.iso",
+                "tip": "Install Fedora 36"
+            }
+        ]
+    },
+    "persistence": [
+        {
+            "image": "/Images/Linux/debian-live-11.5.0-amd64-kde+nonfree.iso",
+            "backend": "/Data/persistence.dat",
+            "autosel": 1
+        }
+    ]
+}

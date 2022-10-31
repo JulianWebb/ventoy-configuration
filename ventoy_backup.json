@@ -1,0 +1,12 @@
+{
+    "control":[
+        { "VTOY_MAX_SEARCH_LEVEL": "4" },
+        { "VTOY_WIN11_BYPASS_CHECK": "1" }
+    ],
+    "theme":{
+        "file": "/ventoy/theme/theme.txt",
+        "fonts":[
+            "/ventoy/theme/comic.pf2"
+        ]
+    }
+}
